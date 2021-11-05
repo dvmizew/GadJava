@@ -1,4 +1,4 @@
-package lab1.ch1;
+package lab1.ch2;
 
 class FooBar {
     private static String contains(int num){

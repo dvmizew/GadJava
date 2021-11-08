@@ -29,7 +29,7 @@ public class Main {
                 }
             }
         }
-        return toReturn;
+        return toReturn[i];
     }
 
     public static void filmeActoriPeste50(Studio[] studioDatabase){
@@ -48,21 +48,20 @@ public class Main {
         Premiu oscar1990 = new Premiu("Oscar", 1990);
         Premiu oscar2000 = new Premiu("Oscar", 2000);
         Premiu oscar2010 = new Premiu("Oscar", 2010);
-        Premiu oscar2011 = new Premiu("Oscar", 2011);
         Premiu oscar2018 = new Premiu("Oscar", 2018);
 
-        Actor actorOscar1990 = new Actor("Actor cu 2 oscaruri", 35, new Premiu[]{oscar1990,oscar2000});
-        Actor actorOscar2010 = new Actor("Actor cu oscar din 2010", 55, new Premiu[]{oscar2010});
-        Actor actorOscar2018 = new Actor("Actor cu oscar din 2018", 23, new Premiu[]{oscar2018});
-        Actor actorFaraPremiu01 = new Actor("Actor fara oscar 01", 33, new Premiu[]{});
-        Actor actorFaraPremiu02 = new Actor("Actor fara oscar 02", 60, new Premiu[]{});
-        Actor actorFaraPremiu03 = new Actor("Actor cu 2 oscaruri", 20, new Premiu[]{});
+        Actor actorOscar1990 = new Actor("actor cu 2 oscaruri", 35, new Premiu[]{oscar1990,oscar2000});
+        Actor actorOscar2010 = new Actor("actor cu oscar din 2010", 55, new Premiu[]{oscar2010});
+        Actor actorOscar2018 = new Actor("actor cu oscar din 2018", 23, new Premiu[]{oscar2018});
+        Actor actorFaraPremii01 = new Actor("actor fara oscar 01", 33, new Premiu[]{});
+        Actor actorFaraPremii02 = new Actor("actor fara oscar 02", 60, new Premiu[]{});
+        Actor actorFaraPremii03 = new Actor("actor fara oscar 03", 20, new Premiu[]{});
 
-        Film film1 = new Film(1990, "Film cu actor de oscar", new Actor[]{actorOscar1990, actorFaraPremiu01});
-        Film film2 = new Film(2010, "Film cu actor fara premii 2", new Actor[]{actorFaraPremiu01, actorFaraPremiu02, actorFaraPremiu03});
-        Film film3 = new Film(2010, "Film cu actor fara premii 3", new Actor[]{actorFaraPremiu01,actorFaraPremiu02, actorFaraPremiu03});
-        Film film4 = new Film(2018, "Film cu actor de premii oscar", new Actor[]{actorFaraPremiu01, actorFaraPremiu02, actorFaraPremiu03});
-        Film film5 = new Film(2018, "Film cu actor fara premii", new Actor[]{actorFaraPremiu02,actorFaraPremiu03});
+        Film film1 = new Film(1990, "Film cu actor de oscar", new Actor[]{actorOscar1990, actorFaraPremii01});
+        Film film2 = new Film(2010, "Film cu actor fara premii 2", new Actor[]{actorFaraPremii01, actorFaraPremii02, actorFaraPremii03});
+        Film film3 = new Film(2010, "Film cu actor fara premii 3", new Actor[]{actorFaraPremii01,actorFaraPremii02, actorFaraPremii03});
+        Film film4 = new Film(2018, "Film cu actor de premii oscar", new Actor[]{actorFaraPremii01, actorFaraPremii02, actorFaraPremii03});
+        Film film5 = new Film(2018, "Film cu actor fara premii", new Actor[]{actorFaraPremii02,actorFaraPremii03});
 
         Studio studio1 = new Studio("MGM", new Film[]{film1,film2});
         Studio studio2 = new Studio("Disney", new Film[]{film3,film4,film5});

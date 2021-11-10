@@ -11,6 +11,11 @@ public class Fish extends Animal{
     }
 
     @Override
+    public void eat() {
+
+    }
+
+    @Override
     public void walk() {
         super.walk();
     }

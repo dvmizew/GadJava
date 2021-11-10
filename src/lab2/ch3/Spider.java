@@ -2,8 +2,11 @@ package lab2.ch3;
 
 public class Spider extends Animal {
     public Spider(int legs) {
-        super(legs);
-        legs = 8;
+        super(8);
+    }
+
+    public Spider() {
+        
     }
 
     @Override

@@ -3,8 +3,7 @@ package lab2.ch3;
 public class Cat extends Animal implements Main.Pet {
     String name;
     protected Cat(int legs) {
-        super(legs);
-        legs = 4;
+        super(4);
     }
 
     Cat(String name) {

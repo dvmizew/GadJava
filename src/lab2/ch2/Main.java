@@ -9,28 +9,28 @@ public class Main {
         }
     }
 
-    public static String afiseazaActoriCuDouaPremii(Studio[] studiouri, String numeActor) {
-        String[] toReturn = new String[10];
-        int i = 0;
-        int j = 0;
-        for (Studio currentStudio : studiouri) {
-            for (Film currentFilm : currentStudio.getFilme()) {
-                for (Actor currentActor : currentFilm.getActor()) {
-                    if (currentActor.getNume().equals(numeActor)) {
-                        toReturn[i] = currentStudio.getNume();
-                        i++;
-                        break;
-                    }
-                }
-                if (i > j) {
-                    j = i;
-                    i++;
-                    break;
-                }
-            }
-        }
-        return toReturn[];
-    }
+//    public static String afiseazaActoriCuDouaPremii(Studio[] studiouri, String numeActor) {
+//        String[] toReturn = new String[10];
+//        int i = 0;
+//        int j = 0;
+//        for (Studio currentStudio : studiouri) {
+//            for (Film currentFilm : currentStudio.getFilme()) {
+//                for (Actor currentActor : currentFilm.getActor()) {
+//                    if (currentActor.getNume().equals(numeActor)) {
+//                        toReturn[i] = currentStudio.getNume();
+//                        i++;
+//                        break;
+//                    }
+//                }
+//                if (i > j) {
+//                    j = i;
+//                    i++;
+//                    break;
+//                }
+//            }
+//        }
+//        return toReturn[];
+//    }
 
     public static void filmeActoriPeste50(Studio[] studioDatabase){
         for (Studio currentStudio:studioDatabase) {
@@ -68,13 +68,13 @@ public class Main {
         Studio[] studioDatabase = new Studio[] {studio1,studio2};
 
         afisareStudiouri(studioDatabase);
-        String s = "Actor fara oscar 01";
-        String[] result = afiseazaActoriCuDouaPremii(studioDatabase[], s);
-        for(String currentName: result){
-            if (currentName != null){
-                System.out.println(currentName);
-            }
-        }
-        filmeActoriPeste50(studioDatabase);
+//        String s = "Actor fara oscar 01";
+//        String[] result = afiseazaActoriCuDouaPremii(studioDatabase[], s);
+//        for(String currentName: result){
+//            if (currentName != null){
+//                System.out.println(currentName);
+//            }
+//        }
+//        filmeActoriPeste50(studioDatabase);
     }
 }

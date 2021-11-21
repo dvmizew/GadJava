@@ -8,8 +8,7 @@ public class Main {
             }
         }
     }
-
- /*   public static String afiseazaActoriCuDouaPremii(Studio[] studiouri, String numeActor) {
+    public static String[] afiseazaActoriCuDouaPremii(Studio[] studiouri, String numeActor) {
         String[] toReturn = new String[10];
         int i = 0;
         int j = 0;
@@ -29,7 +28,7 @@ public class Main {
                 }
            }
        }
-        return toReturn[];
+        return toReturn;
     }
 
     public static void filmeActoriPeste50(Studio[] studioDatabase){
@@ -42,7 +41,7 @@ public class Main {
                 }
             }
         }
-    }*/
+    }
 
     public static void main(String[] args) {
         Premiu oscar1990 = new Premiu("Oscar", 1990);
@@ -68,14 +67,13 @@ public class Main {
         Studio[] studioDatabase = new Studio[] {studio1,studio2};
 
         afisareStudiouri(studioDatabase);
-      /* String s = "Actor fara oscar 01";
-       String[] result = afiseazaActoriCuDouaPremii(studioDatabase[], s);
+       String s = "Actor fara oscar 01";
+       String[] result = afiseazaActoriCuDouaPremii(studioDatabase, s);
        for(String currentName: result){
            if (currentName != null){
                 System.out.println(currentName);
            }
         }
        filmeActoriPeste50(studioDatabase);
-       */
     }
 }

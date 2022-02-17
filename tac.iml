@@ -32,6 +32,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="junit-4.13.2" level="application" />
+    <orderEntry type="library" name="reactor-core-3.3.0.RELEASE" level="project" />
+    <orderEntry type="library" name="reactive-streams-1.0.3" level="project" />
   </component>
 </module>
